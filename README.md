@@ -1,4 +1,4 @@
-#WebChat
+# WebChat
 I recommend to open solution in the latest version of Visual Studio 2017 with all updates.
 .NET Core 2.0 should be installed on computer.
 Solution uses MS SQL 2008 R2 DB, structure of solution can be sound in Chat DB project of solution.
