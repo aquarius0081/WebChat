@@ -1,0 +1,15 @@
+<div *ngIf="room">
+    <h2>{{room.name}}</h2>
+    <button (click)="goBack()">Back</button>
+    <div #divMessages class="messages-panel">
+        <ul>
+            <li *ngFor="let message of room.messages">
+                {{message.createdDate}} ({{message.author}}) {{message.text}}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <input #messageText placeholder="Type message" required />
+        <button (click)="addMessage(messageText.value); messageText.value=''">Submit</button>
+    </div>
+</div>

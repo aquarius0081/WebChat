@@ -1,0 +1,9 @@
+<h1>Web Chat</h1>
+    <input #nickname="ngModel" placeholder="Type your nickname" required [(ngModel)]="nick" />
+    <button (click)="signIn(nickname)">Proceed</button>
+<div *ngIf="nickname.invalid && (nickname.dirty || nickname.touched)"
+     class="alert alert-danger">
+    <div *ngIf="nickname.errors.required">
+        Name is required.
+    </div>
+</div>
